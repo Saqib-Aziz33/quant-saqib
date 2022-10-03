@@ -96,6 +96,39 @@ body{
     
 }
 
+.footer{
+    .mobile-faqs{
+        display: none;
+    }
+
+    @media only screen and (max-width: 600px){
+        .mobile-faqs{
+            display: block;
+        }
+        .pc-faqs{
+            display: none;
+        }
+    }
+
+    // ********** override
+    .accordion-item{
+        border: none;
+        background-color: transparent;
+    }
+    .accordion-button{
+        background: none;
+        border: none;
+        box-shadow: none;
+    }
+    .accordion-button:focus{
+        box-shadow: none;
+    }
+    .accordion-button:not(.collapsed){
+        color: $color-dark;
+        background-color: transparent;
+    }
+}
+
 .custom-card{
     max-width: 400px;
     margin-left: auto;
