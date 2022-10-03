@@ -3,6 +3,7 @@ import Hero from "../components/elements/Hero";
 import GridCol2 from "../components/elements/GridCol2";
 import BgImageSection from "../components/elements/BgImageSection";
 import ExploreSection from "../components/elements/ExploreSection"
+import sectionData from '../components/utils/data.json'
 
 function Home() {
   return (
@@ -23,6 +24,14 @@ function Home() {
         support them.
       </BgImageSection>
       <ExploreSection />
+
+      {
+        sectionData.map((data, index) => (
+          <GridCol2 heading={data.heading} text={data.text} img={data.img} key={index}></GridCol2>
+        ))
+      }
+
+      <BgImageSection btnText='Get Started' heading='The future of finance. Today.'></BgImageSection>
     </>
   );
 }

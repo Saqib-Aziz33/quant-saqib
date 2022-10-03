@@ -1,0 +1,22 @@
+[
+    {
+        "heading": "Interoperability solved",
+        "text": "Reduce costs and access wider markets by deploying any app on any blockchain. That’s the power of our single, standard, multi-chain API.",
+        "img": "assets/box.svg"
+    },
+    {
+        "heading": "Developers unleashed",
+        "text": "Develop on Overledger without specialist blockchain knowledge.",
+        "img": "assets/laptop.svg"
+    },
+    {
+        "heading": "Built for enterprises",
+        "text": "Led by an experienced team from large corporate, financial and regulatory institutions, we enable existing financial infrastructure to operate with new decentralised networks.",
+        "img": "assets/gate.svg"
+    },
+    {
+        "heading": "Designed for the future",
+        "text": "With our blockchain-agnostic approach, your existing infrastructure investments are protected. And the door is open to future cross-platform applications.",
+        "img": "assets/door.svg"
+    }
+]
