@@ -11,6 +11,7 @@ $min-transition: all 0.5s ease;
 }
 body{
     color: $color-dark;
+    overflow-x: hidden;
 }
 
 
@@ -30,10 +31,46 @@ body{
             padding: 0.5rem;
             font-size: 0.9rem;
             transition: $min-transition;
+            &:hover{
+                color: $text-light-dark-hover;
+            }
         }
-        :hover{
-            color: $text-light-dark-hover;
+    }
+}
+
+.hero{
+    position: relative;
+    video{
+        width: 55vw;
+        object-fit: cover;
+        height: auto;
+        border-radius: 40% 0 0 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    @media only screen and (max-width: 980px){
+        video{
+            width: 50vw;
         }
+    }
+    // mobile
+    @media only screen and (max-width: 800px){
+        video{
+            position: static;
+            width: 100%;
+            border-radius: 50% 0 0 0;
+            margin-top: 5rem;
+        }
+    }
+}
+
+.bg-image-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)) ,url('./media//london-areal.jpg');
+    color: #fff;
+    padding: 150px 0;
+    button{
+        background-color: #fff;
     }
 }
 
@@ -42,3 +79,26 @@ body{
 
 
 // *************************** utils ***************************
+.text-grad{
+  background: -webkit-linear-gradient(0deg, $color-red, $color-orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-btn{
+    border: 2px solid $color-orange;
+    border-radius: 2px 1.5rem;
+    font-weight: 500;
+    padding: 0.8rem 1.5rem;
+    background: transparent;
+    transition: all 0.2s ease;
+    &:hover{
+        color: #fff;
+        background: linear-gradient(90deg, $color-red, $color-orange);
+    }
+}
+@media only screen and (max-width: 600px){
+    .custom-btn{
+        font-size: 1.5rem;
+    }
+}

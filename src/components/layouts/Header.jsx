@@ -4,7 +4,7 @@ import {FiSearch} from 'react-icons/fi'
 
 function Header() {
   return (
-    <header className="header p-2 py-5">
+    <header className="header p-2 py-5 sticky-top">
       <nav className="container d-flex justify-content-between align-items-center">
         <Link to='/' className="text-dark d-flex text-decoration-none align-items-center gap-2 fs-5 fw-bold">
           <SiQuantconnect size={50} />
