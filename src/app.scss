@@ -98,6 +98,8 @@ body{
 
 .custom-card{
     max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 0 0 0 2rem;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
     transition: $min-transition;

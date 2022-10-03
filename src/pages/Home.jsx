@@ -27,7 +27,7 @@ function Home() {
 
       {
         sectionData.map((data, index) => (
-          <GridCol2 heading={data.heading} text={data.text} img={data.img} key={index}></GridCol2>
+          <GridCol2 heading={data.heading} text={data.text} img={data.img} key={index} index={index}></GridCol2>
         ))
       }
 
