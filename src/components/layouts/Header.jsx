@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import {SiQuantconnect} from 'react-icons/si'
-import {FiSearch} from 'react-icons/fi'
+import {FiSearch, FiArrowRight} from 'react-icons/fi'
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -37,7 +37,33 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto nav-list">
-            <Nav.Link href="#home">Who</Nav.Link>
+            <Nav.Link href="#home">
+              <span>Who</span>
+              <div className="nav-dropdown p-4">
+                <div style={{maxWidth: '200px'}}>
+                <h6 className="mb-4">Who we serve</h6>
+                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut illum commodi rem repellendus eius omnis cumque voluptate quidem dolor dolorem!</small>
+                </div>
+                <ul className="links list-unstyled pt-4">
+                  <li className="d-flex justify-content-between align-items-center">
+                    <button className="btn btn-sm">Financial institution</button>
+                    <FiArrowRight />
+                  </li>
+                  <li className="d-flex justify-content-between align-items-center">
+                    <button className="btn btn-sm">Financial institution</button>
+                    <FiArrowRight />
+                  </li>
+                  <li className="d-flex justify-content-between align-items-center">
+                    <button className="btn btn-sm">Financial institution</button>
+                    <FiArrowRight />
+                  </li>
+                  <li className="d-flex justify-content-between align-items-center">
+                    <button className="btn btn-sm">Financial institution</button>
+                    <FiArrowRight />
+                  </li>
+                </ul>
+              </div>
+            </Nav.Link>
             <Nav.Link href="#link">What</Nav.Link>
             <Nav.Link href="#link">How</Nav.Link>
             <Nav.Link href="#link">Why</Nav.Link>

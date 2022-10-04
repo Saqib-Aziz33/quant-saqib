@@ -3,6 +3,7 @@ import Hero from "../components/elements/Hero";
 import GridCol2 from "../components/elements/GridCol2";
 import BgImageSection from "../components/elements/BgImageSection";
 import ExploreSection from "../components/elements/ExploreSection"
+import CreateValueSec from "../components/elements/CreateValueSec";
 import sectionData from '../components/utils/data.json'
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
         enterprises; and the technology partners and fintech developers who
         support them.
       </BgImageSection>
+      <CreateValueSec />
       <ExploreSection />
 
       {
@@ -32,6 +34,7 @@ function Home() {
       }
 
       <BgImageSection btnText='Get Started' heading='The future of finance. Today.'></BgImageSection>
+
     </>
   );
 }

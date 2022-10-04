@@ -6,8 +6,8 @@ import NotFound from "./pages/NotFound";
 import Base from "./components/layouts/Base";
 // other
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./app.scss";
 import 'bootstrap/dist/js/bootstrap.min.js'
+import "./app.scss";
 
 function App() {
   return (
