@@ -1,4 +1,6 @@
 import Card from '../utils/Card'
+import { Link } from 'react-router-dom'
+import {HiArrowNarrowRight} from 'react-icons/hi'
 
 function ExploreSection() {
   return (
@@ -25,6 +27,10 @@ function ExploreSection() {
           <Card badge='news' tags={['CBSC', 'cityam', 'enterprice']} text='Martin Hargreaves on the benefits of cbdcs for consumers' />
         </div>
       </section>
+
+      <div className="my-4 text-end">
+        <Link to='/news' className='btn more-btn'>More <HiArrowNarrowRight className='ms-2' /></Link>
+      </div>
 
     </section>
   )

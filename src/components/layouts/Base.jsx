@@ -1,6 +1,7 @@
 // layout
 import Header from "./Header";
 import Footer from "./Footer";
+import BgImageSection from '../elements/BgImageSection'
 
 const Base = (props) => {
   return (
@@ -12,6 +13,7 @@ const Base = (props) => {
       <main role="main">
         {props.children}
       </main>
+      <BgImageSection btnText='Get Started' heading='The future of finance. Today.'></BgImageSection>
       <Footer />
     </div>
   );

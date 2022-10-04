@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 // pages
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import News from './pages/News'
 // layout
 import Base from "./components/layouts/Base";
 // aos
@@ -22,6 +23,7 @@ function App() {
       <Base>
         <Routes>
           <Route index path="/" element={<Home />} />
+          <Route path="/news" element={<News />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </Base>

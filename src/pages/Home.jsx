@@ -33,8 +33,6 @@ function Home() {
         ))
       }
 
-      <BgImageSection btnText='Get Started' heading='The future of finance. Today.'></BgImageSection>
-
     </>
   );
 }
