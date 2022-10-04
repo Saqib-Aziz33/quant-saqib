@@ -206,6 +206,27 @@ body{
     }
 }
 
+.create-value-section{
+    .box{
+        border-left: 2px solid transparent;
+        padding: 0 0.8rem;
+        margin-bottom: 1rem;
+        small{
+            display: inline-block;
+            transition: all 0.8s ease;
+            transform: translateX(50px);
+            opacity: 0;
+        }
+        &:hover{
+            border-color: $color-orange;
+            small{
+                transform: translateX(0);
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
 
 // *************************** overrides ***************************
 
