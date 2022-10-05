@@ -6,7 +6,7 @@ function NewsHero() {
       <div className="container" >
         <div style={{maxWidth: '450px'}}>
           <h2 className="display-4 fw-bold">Explore the future</h2>
-          <p className="lead">Much of the financial world’s digital future will be built on blockchain. Here’s why.</p>
+          <p className="lead my-5">Much of the financial world’s digital future will be built on blockchain. Here’s why.</p>
 
           <div className="p-4 mx-2" style={{boxShadow: '1px 1px 20px 1px rgba(0,0,0,0.1)', borderRadius: '0 1rem 0 1rem'}}>
             <p className="fw-bold">Subscribe and be the first to know</p>

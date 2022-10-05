@@ -12,7 +12,7 @@ function MediaCard(props) {
         </ul>
       </div>
       <div className="img-container">
-        <img style={{objectFit: 'cover', height: '100%'}} src={props.img} alt="" />
+        <img src={props.img} alt="" />
       </div>
     </div>
   );
